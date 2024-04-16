@@ -4,7 +4,6 @@ from src.run_grisa import run_grisa
 from src import utils
 import os
 
-IMG_DIR = os.path.join(os.path.dirname(__file__), 'images')
 
 app = Flask(__name__)
 CORS(app)

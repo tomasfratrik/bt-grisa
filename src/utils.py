@@ -1,7 +1,8 @@
 import requests
 import uuid
 import os
-from app import IMG_DIR
+
+IMG_DIR = os.path.join(os.getcwd(), 'images')
 
 def save_file_from_url(url):
     filename = f'{uuid.uuid4()}.jpg'
