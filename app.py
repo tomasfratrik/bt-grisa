@@ -30,8 +30,8 @@ def grisa_upload():
 
     os.remove(abs_path)
     return jsonify({
-        'similiar_img_json': similiar_img_json,
-        'source_img_json': source_img_json
+        'similar_imgs': similiar_img_json,
+        'source_imgs': source_img_json
     })
 
 
@@ -43,8 +43,8 @@ def grisa_upload_url(url):
     os.remove(abs_path)
 
     return jsonify({
-        'similiar_img_json': similiar_img_json,
-        'source_img_json': source_img_json
+        'similar_imgs': similiar_img_json,
+        'source_imgs': source_img_json
     })
 
 
