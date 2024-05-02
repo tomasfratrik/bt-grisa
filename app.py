@@ -26,11 +26,11 @@ def grisa_upload():
     else :
         return jsonify({'error': 'No file or url provided'})
     
-    similiar_img_json, source_img_json = run_grisa(abs_path)
+    similar_img_json, source_img_json = run_grisa(abs_path)
 
     os.remove(abs_path)
     return jsonify({
-        'similar_imgs': similiar_img_json,
+        'similar_imgs': similar_img_json,
         'source_imgs': source_img_json
     })
 
@@ -39,11 +39,11 @@ def grisa_upload():
 @app.route('/grisa/upload/url/<path:url>', methods=['POST', 'GET'])
 def grisa_upload_url(url):
     abs_path = utils.save_file_from_url(url)
-    similiar_img_json, source_img_json = run_grisa(abs_path)
+    similar_img_json, source_img_json = run_grisa(abs_path)
     os.remove(abs_path)
 
     return jsonify({
-        'similar_imgs': similiar_img_json,
+        'similar_imgs': similar_img_json,
         'source_imgs': source_img_json
     })
 
