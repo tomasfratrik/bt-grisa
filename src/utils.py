@@ -1,3 +1,9 @@
+"""
+Utility functions
+
+Author: Tomas Fratrik
+"""
+
 import requests
 import uuid
 import os

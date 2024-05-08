@@ -1,3 +1,9 @@
+"""
+Running grisa from a function
+
+Author: Tomas Fratrik
+"""
+
 from grisa import Grisa
 
 def run_grisa(absolute_path):

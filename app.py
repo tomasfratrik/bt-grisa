@@ -1,3 +1,9 @@
+"""
+Main API endpoing for GRISA
+
+Author: Tomas Fratrik
+"""
+
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from src.run_grisa import run_grisa

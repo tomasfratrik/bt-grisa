@@ -1,11 +1,12 @@
 # API endpoint for GRISA
-Using `GRISA` as a submodule, this program creates an API with endpoints for it
-
-### Requirements
-Install with `pip install -r requirements.txt`
+Using `GRISA` as a submodule, this program creates an API with endpoints for it.
+Implementation of `GRISA` can be found in the `grisa` folder
 
 ### Local dev
-run with `python3 app.py`
+create virtual enviroment with `python3 -m venv venv`
+activate it with `. venv/bin/activate`
+install all requirements with `pip install -r requirements.txt`
+run `python3 app.py`
 
 ### API Endpoints
 
